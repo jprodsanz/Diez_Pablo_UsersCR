@@ -9,18 +9,18 @@
 </head>
 <body>
 <h1 class="title text-center">Hello Cruel World of Python Flask+SQL</h1>
-<form action="user/create" method="post" class="col-6 mx-auto">
+<form action="/user/create" method="post" class="col-6 mx-auto">
     <div class="form-group">
         <label for="first_name">First Name</label>
-        <input type="text" class="form-control" id="first_name" aria-describedby="first_name" placeholder="Enter Your Name">
+        <input type="text" class="form-control" name="first_name" aria-describedby="first_name" placeholder="Enter Your Name">
     </div>
     <div class="form-group">
         <label for="last_name">Last Name</label>
-        <input type="text" class="form-control" id="last_name" aria-describedby="last_name" placeholder="Enter Your Last Name">
+        <input type="text" class="form-control" name="last_name" aria-describedby="last_name" placeholder="Enter Your Last Name">
     </div>
     <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
     </div>
     <input type="submit" value="Add User" class="btn btn-success"></button>
